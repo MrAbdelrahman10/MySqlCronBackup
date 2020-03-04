@@ -1,0 +1,23 @@
+{
+  "name": "mysqlcronbackup",
+  "version": "1.0.0",
+  "description": "Run schedule to create full backup for mysql database and save it on server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrAbdelrahman10/MySqlCronBackup.git"
+  },
+  "author": "Abdelrahman Mohamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrAbdelrahman10/MySqlCronBackup/issues"
+  },
+  "homepage": "https://github.com/MrAbdelrahman10/MySqlCronBackup#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysqldump": "^3.1.0"
+  }
+}
