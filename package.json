@@ -18,6 +18,7 @@
   "homepage": "https://github.com/MrAbdelrahman10/MySqlCronBackup#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "mysqldump": "^3.1.0"
+    "mysqldump": "^3.1.0",
+    "nodemailer": "^6.4.4"
   }
 }

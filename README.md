@@ -1,6 +1,6 @@
 # MySQL Cron Backup
 
-Run schedule to create full backup for mysql database and save it on server
+Run schedule to create full backup for mysql database, save it on server and send copy to mail
 
 # Steps to install
  1. Rename **.env.example** to **.env** and update values
