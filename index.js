@@ -29,7 +29,9 @@ const backup_file = `./backups/${file_name}.sql.gz`;
             compressFile: true,
         });
 
-        mail.send_mail(process.env.MAIL_FROM_NAME, process.env.MAIL_BACKUP, `Backup ${file_name}`, 'Download backup from attachment', file_name, backup_file);
+        if (process.env.MAIL_SEND_COPY) {
+            mail.send_mail(process.env.MAIL_FROM_NAME, process.env.MAIL_BACKUP, `Backup ${file_name}`, 'Download backup from attachment', file_name, backup_file);
+        }
 
         console.log('[task]', new Date(), 'Backup file is:-', backup_file);
 
